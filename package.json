@@ -1,0 +1,15 @@
+{
+  "name": "argo22-theme",
+  "version": "1.0.0",
+  "description": "WordPress theme with ACF blocks and Tailwind CSS",
+  "scripts": {
+    "build": "npm run build:css",
+    "build:css": "tailwindcss -i ./assets/css/theme.scss -o ./assets/css/theme.css --minify",
+    "watch": "tailwindcss -i ./assets/css/theme.scss -o ./assets/css/theme.css --watch",
+    "dev": "npm run watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}
